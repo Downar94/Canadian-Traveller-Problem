@@ -8,8 +8,11 @@ Strategy:
 - Hindsight Optimization (HOP):
 
 Strategy:
-1. Find deterministic shortest path
-
+1. Choose an origin and destination nodes
+2. Set the number of rollouts (N)
+3. Generate the weather at the rollout, according to the blockage probability. Now we have only blocked and traversable edges.
+4. Find shortest path in each rollout to estimate travel cost and determine next action.
+5. Calculate shortest path for the whole graph (the graph without blocked edges).
 
 - Optimistic UCT (UCTO):
 
