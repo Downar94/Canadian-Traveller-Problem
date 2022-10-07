@@ -5,6 +5,7 @@ The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is 
 - Hindsight Optimization (HOP):
 -
 - Optimistic UCT (UCTO):
+
 Strategy:
 1. Choose an origin and destination nodes
 2. Set the number of rollouts (N)
