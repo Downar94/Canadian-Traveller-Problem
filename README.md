@@ -28,12 +28,20 @@ The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is 
 ## Results
 ### Hindsight Optimization (HOP)
 Finding shortest path from Timisoara to Fagaras
+#### Shortest path:
+![shortest](https://user-images.githubusercontent.com/44844566/196803422-1386e37f-f8e4-48e0-b430-185c58c40b71.png)
+
+![shortestcoordinates](https://user-images.githubusercontent.com/44844566/196803423-fc033459-e470-4cf6-835d-c08dcb1420f7.PNG)
+#### Longer path after R.Vilcea - Sibiu, Sibiu - Fagaras edge high blockage probability:
+![sampleFileName8](https://user-images.githubusercontent.com/44844566/196803419-6ecec787-255b-4dcf-85e4-fc7b34c82d66.png)
+
+![goodpath](https://user-images.githubusercontent.com/44844566/196803416-027bd634-3d4a-4ffe-ba80-6967b4b94652.PNG)
 ### Optimistic UCT (UCTO)
 Finding shortest path from Arad to Bucharest
 #### Shortest path:
 ![shorterUCTO](https://user-images.githubusercontent.com/44844566/196765384-3477c6c9-6c07-4542-b447-ad25dd5b2e20.PNG)
 ![sampleFileName3](https://user-images.githubusercontent.com/44844566/196765382-89bd4ad9-9cd6-4818-8317-07705caf8ed6.png)
-#### Longer path after R.Vilcea - Sibiu Edge blockage:
+#### Longer path after R.Vilcea - Sibiu Edge high blockage probability:
 ![largerUCTO](https://user-images.githubusercontent.com/44844566/196765387-94c54114-b33f-42ad-8e18-2db322992511.PNG)
 ![sampleFileName2](https://user-images.githubusercontent.com/44844566/196765377-57ac0297-e702-435d-9ac0-cd06613ad9c8.png)
 ### Optimism (OMT)
