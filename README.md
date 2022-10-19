@@ -27,6 +27,7 @@ The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is 
 
 ## Results
 ### Hindsight Optimization (HOP)
+Finding shortest path from Timisoara to Fagaras
 ### Optimistic UCT (UCTO)
 Finding shortest path from Arad to Bucharest
 #### Shortest path:
