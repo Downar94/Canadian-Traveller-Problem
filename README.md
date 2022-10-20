@@ -1,11 +1,7 @@
 # Canadian-Traveller-Problem
 ## Description
 The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is a problem where the main goal is to find the shortest path between 2 nodes under uncertain conditions. The edges between nodes (roads) may be blocked, with a given probability. For this purpose 3 types of algorithms have been created:
-### Optimism (OMT)
 
-#### Strategy:
-1. Find deterministic shortest path
-2. 
 ### Hindsight Optimization (HOP)
 
 #### Strategy:
@@ -25,16 +21,21 @@ The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is 
 5. Repeat step 4 until destination.
 6. Using belief sequence, compute shortest path.
 
-## Results
-To test the algorithm I have used illustration from the book: “Artificial Intelligence: A Modern Approach” reflecting the map of Romania, wih the nodes are individual cities and edges as distances between them.
-
 ### Optimism (OMT)
-#### Shortest path:
-![OMTgoodtext](https://user-images.githubusercontent.com/44844566/196925899-3d1ec787-ded2-4a0a-8495-8388adc6a89f.PNG)
-![OMTgoodtrace](https://user-images.githubusercontent.com/44844566/196925911-45dfd14b-06fe-41d6-8f2c-23bd8f40f72c.PNG)
-#### Longer path after R.Vilcea - Pitesti blockage:
-![OMTblockagetext](https://user-images.githubusercontent.com/44844566/196925949-86977485-16d9-4eae-af50-782f161f935d.PNG)
-![OMTtraceblockage](https://user-images.githubusercontent.com/44844566/196925970-099ff9cd-bd88-47f9-8f10-953517fdbdea.PNG)
+
+#### Strategy:
+1. Find shortest path
+2. Go through the graph after reaching ambiguous edge
+3. If ambigous edge is traversable set blockage probability to 0, otherwise blockage probability = 1.
+4. Current node is now your starting node. Repeat 1-3 steps, until you reach the destination.
+5. Calculate shortest path.
+
+## Results
+To test the algorithm I have used illustration from the book: “Artificial Intelligence: A Modern Approach” reflecting the map of Romania, wih the nodes are individual cities and edges as distances between them:
+
+![map](https://user-images.githubusercontent.com/44844566/196927016-23361b66-313d-4ee5-8897-e2d567b456d9.PNG)
+“Artificial Intelligence: A Modern Approach”
+
 ### Hindsight Optimization (HOP)
 Finding shortest path from Timisoara to Fagaras
 #### Shortest path:
@@ -54,3 +55,9 @@ Finding shortest path from Arad to Bucharest
 ![largerUCTO](https://user-images.githubusercontent.com/44844566/196765387-94c54114-b33f-42ad-8e18-2db322992511.PNG)
 ![sampleFileName2](https://user-images.githubusercontent.com/44844566/196765377-57ac0297-e702-435d-9ac0-cd06613ad9c8.png)
 ### Optimism (OMT)
+#### Shortest path:
+![OMTgoodtext](https://user-images.githubusercontent.com/44844566/196925899-3d1ec787-ded2-4a0a-8495-8388adc6a89f.PNG)
+![OMTgoodtrace](https://user-images.githubusercontent.com/44844566/196925911-45dfd14b-06fe-41d6-8f2c-23bd8f40f72c.PNG)
+#### Longer path after R.Vilcea - Pitesti blockage:
+![OMTblockagetext](https://user-images.githubusercontent.com/44844566/196925949-86977485-16d9-4eae-af50-782f161f935d.PNG)
+![OMTtraceblockage](https://user-images.githubusercontent.com/44844566/196925970-099ff9cd-bd88-47f9-8f10-953517fdbdea.PNG)
