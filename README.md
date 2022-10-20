@@ -26,6 +26,13 @@ The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is 
 6. Using belief sequence, compute shortest path.
 
 ## Results
+### Optimism (OMT)
+#### Shortest path:
+![OMTgoodtext](https://user-images.githubusercontent.com/44844566/196925899-3d1ec787-ded2-4a0a-8495-8388adc6a89f.PNG)
+![OMTgoodtrace](https://user-images.githubusercontent.com/44844566/196925911-45dfd14b-06fe-41d6-8f2c-23bd8f40f72c.PNG)
+#### Longer path after R.Vilcea - Pitesti blockage:
+![OMTblockagetext](https://user-images.githubusercontent.com/44844566/196925949-86977485-16d9-4eae-af50-782f161f935d.PNG)
+![OMTtraceblockage](https://user-images.githubusercontent.com/44844566/196925970-099ff9cd-bd88-47f9-8f10-953517fdbdea.PNG)
 ### Hindsight Optimization (HOP)
 Finding shortest path from Timisoara to Fagaras
 #### Shortest path:
