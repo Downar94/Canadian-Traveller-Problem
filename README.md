@@ -26,6 +26,8 @@ The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is 
 6. Using belief sequence, compute shortest path.
 
 ## Results
+To test the algorithm I have used illustration from the book: “Artificial Intelligence: A Modern Approach” reflecting the map of Romania, wih the nodes are individual cities and edges as distances between them.
+
 ### Optimism (OMT)
 #### Shortest path:
 ![OMTgoodtext](https://user-images.githubusercontent.com/44844566/196925899-3d1ec787-ded2-4a0a-8495-8388adc6a89f.PNG)
