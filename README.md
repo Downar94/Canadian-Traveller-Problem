@@ -1,4 +1,7 @@
 # Canadian-Traveller-Problem
+- ### [Description](#desc)
+- ### [Results](#result)
+<a name="desc"></a>
 ## Description
 The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is a problem where the main goal is to find the shortest path between 2 nodes under uncertain conditions. The edges between nodes (roads) may be blocked, with a given probability. For this purpose 3 types of algorithms have been created:
 
@@ -29,7 +32,7 @@ The algorithms in Python for resolving Canadian Traveller Problem (CTP). CTP is 
 3. If ambigous edge is traversable set blockage probability to 0, otherwise blockage probability = 1.
 4. Current node is now your starting node. Repeat 1-3 steps, until you reach the destination.
 5. Calculate shortest path.
-
+<a name="result"></a>
 ## Results
 To test the algorithm I have used illustration from the book: “Artificial Intelligence: A Modern Approach” reflecting the map of Romania, wih the nodes are individual cities and edges as distances between them:
 
